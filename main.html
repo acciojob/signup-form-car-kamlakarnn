@@ -15,16 +15,23 @@
 <input type="email" id="email" name="email" placeholder="Email" required><br>
 
 <label for="gender_m">gender_m</label>
-<input type="radio" id="gender_m" name="gender_m" required><br>
+<input type="radio" id="gender_m" name="gender" required><br>
 
 <label for="gender_f">gender_f</label>
-<input type="radio" id="gender_f" name="gender_f" required><br>
+<input type="radio" id="gender_f" name="gender" required><br>
 
 <label for="cars">Car Brands:</label>
-<input type="Select" id="cars" name="cars" placeholder="--Please choose an option--" required><br>
+<!-- <select type="Select" id="cars" name="cars" placeholder="--Please choose an option--" required><br> -->
+<select id="cars" name="cars" required>
+  <option value="">--Please choose an option--</option>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <!-- Add more options as needed -->
+</select>
+
 
 <label for="age">Age</label>
-<input type="number" id="age" name="age" placeholder="Age" placeholder="Age"required><br>
+<input type="number" id="age" name="age"  placeholder="Age" required><br>
 
 <label for="dob">DOB</label>
 <input type="date" id="dob" name="dob" required><br>
@@ -37,9 +44,11 @@
 
 <label for="tos">tos</label>
 <input type="checkbox" id="tos" name="tos" required><br>
-</form>
+
 
 <button type="submit">Submit</button>
+</form>
+
 
 </body>
 
